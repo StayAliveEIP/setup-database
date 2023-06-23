@@ -23,8 +23,7 @@ const verifyDatabase = (collectionName) => {
     }
 }
 
-const collections = ["drivingSchools", "availabilities", "centers", "departments", "thresholdsInformation",
-    "thresholdsReached", "exams", "examsFound", "examsBooked", "candidates"];
+const collections = ["rescuers"];
 
 for (let i = 0; i < collections.length; i++) {
     const collectionName = collections[i];
