@@ -68,11 +68,19 @@ const validator = {
             },
             "password": {
                 bsonType: "object",
-                required: ["password", "lastChange"],
+                required: ["password", "token", "lastTokenSent", "lastChange"],
                 properties: {
                     "password": {
                         bsonType: "string",
                         description: "must be a string and is required"
+                    },
+                    "lastTokenSent": {
+                        bsonType: ["date", "null"],
+                        description: "must be a date or null"
+                    },
+                    "token": {
+                        bsonType: ["string", "null"],
+                        description: "must be a string or null"
                     },
                     "lastChange": {
                         bsonType: ["date", "null"],
