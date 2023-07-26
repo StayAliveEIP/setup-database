@@ -88,6 +88,10 @@ const validator = {
                     }
                 },
                 additionalProperties: false
+            },
+            available : {
+                bsonType: "bool",
+                description: "must be a boolean"
             }
         },
         additionalProperties: false
